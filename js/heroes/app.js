@@ -23,6 +23,11 @@ heroes.directive('heroCreator',function(){
     controller: ['$scope', 'newHeroFactory',
       function($scope, newHeroFactory){
         $scope.hero = newHeroFactory();
+        
+        $scope.add = function(){
+          $scope.addNewHero($scope.hero);
+          $scope.hero = newHeroFactory();
+        }
       }
     ],
     templateUrl: 'frags/hero_add.html'
