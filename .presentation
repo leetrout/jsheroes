@@ -1,0 +1,27 @@
+---
+slides:
+- slide:
+    commit: 62bcaf8b728d50dca12ceac87159aa4e91014c9f
+    message: Initial commit
+- slide:
+    commit: cf26cede59b626ef1983bffecb871c64ee1aa352
+    message: Add basic html
+- slide:
+    commit: 94d306be22470d888cb5781e14ba5e86bed94d83
+    message: Add heroes app
+- slide:
+    commit: 127c2cc4ccdab9afc227b5a13aafce3a375b4d7a
+    message: Add angular directive and scope
+- slide:
+    commit: abbf7dc30dcf93aeb1c86cf33034149efac77cac
+    message: Add hero addition
+- slide:
+    commit: dee19ac366f1e609222e2e36c8a2c6bca2932aca
+    message: Fix dupes
+- slide:
+    commit: b789930745e3334ac5185ee732b90646f449da28
+    message: Add factory
+- slide:
+    commit: c179e26874df7b375bec414ee6c6f484b3261fe9
+    message: Wrap addNewHero and reset on click
+branch: master
