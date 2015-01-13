@@ -1,0 +1,27 @@
+<div>
+  <label>Name</label>
+  <input ng-model="hero.name">
+</div>
+
+<div>
+  <label>Superpower</label>
+  <input ng-model="hero.superpower">
+</div>
+
+<div>
+  <label>Alter Ego</label>
+  <input ng-model="hero.alterEgo">
+</div>
+
+<div>
+  <h4>Preview:</h4>
+  <p>
+    Name: {{ hero.name }}
+    <br>
+    Alter Ego: {{ hero.alterEgo }}
+    <br>
+    Superpower: {{ hero.superpower }}
+  </p>
+</div>
+
+<button ng-click="addNewHero(hero)">Add New Hero</button>
