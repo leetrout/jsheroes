@@ -24,4 +24,16 @@ slides:
 - slide:
     commit: c179e26874df7b375bec414ee6c6f484b3261fe9
     message: Wrap addNewHero and reset on click
+- slide:
+    commit: 970426ba55a1022d2869f917f3d8fe2596ad6db6
+    message: Add firebase
+- slide:
+    commit: 8ef7da1675a309591543ca1b480af9f3bf0dc1c7
+    message: Sync with firebase
+- slide:
+    commit: db893e0eae83119baa75f463b39a879971fa67c0
+    message: Init git-presenter
+- slide:
+    commit: cb96f954e0f3aeab05b3deb363b61cb5f67842bc
+    message: Merge branch 'master' into feature/firebase
 branch: master
