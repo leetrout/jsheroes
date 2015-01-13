@@ -1,3 +1,6 @@
-<ul>
-  <li ng-repeat="hero in heroes track by $index">{{ hero }}</li>
+<div ng-hide="heroes.length">
+  <p>There are no heroes. Add one!</p>
+</div>
+<ul ng-show="heroes.length">
+  <li ng-repeat="hero in heroes track by $index">{{ hero.name }} (A.K.A {{ hero.alterEgo }}) - {{ hero.superpower }}</li>
 </ul>

@@ -2,7 +2,7 @@ var heroes = angular.module('heroes', []);
 
 heroes.controller('HeroController', ['$scope', 
   function($scope){
-    $scope.heroes = ['spiderman', 'batman'];
+    $scope.heroes = [];
     $scope.addNewHero = function(hero) {
       $scope.heroes.push(hero)
     }
@@ -15,11 +15,16 @@ heroes.directive('heroList', function(){
   }
 });
 
-heroes.directive('heroCreator', function(){
+heroes.directive('heroCreator',function(){
   return {
     scope: {
-      addNewHero:"="
+      addNewHero: "=",
     },
+    controller: ['$scope', 'newHeroFactory',
+      function($scope, newHeroFactory){
+        $scope.hero = newHeroFactory();
+      }
+    ],
     templateUrl: 'frags/hero_add.html'
   }
 });
