@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="heroes">
   <head>
     <title>Hero Manager 5000</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.min.js"></script>
   </head>
-    <body>
-      <h1>Hero Manager 5000</h1>
-      <div>
-          <p>Let's manage our heroes!</p>
-      </div>
-      <script src="js/heroes/app.js"></script>
-    </body>
+  <body ng-controller="HeroController">
+    <h1>Hero Manager 5000</h1>
+    <div hero-list></div>
+    <script src="js/heroes/app.js"></script>
+  </body>
 </html>
