@@ -1,4 +1,4 @@
-var heroes = angular.module('heroes', []);
+var heroes = angular.module('heroes', ['firebase']);
 
 heroes.controller('HeroController', ['$scope', 
   function($scope){
